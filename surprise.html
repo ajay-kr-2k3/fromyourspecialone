@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(180deg,#ff0077,#ff0278);
+  color:#fff;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+/* SECTION COMMON */
+section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position: relative;
+}
+
+/* BIG HEART */
+.heart{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  animation: heartZoom 3s ease forwards;
+  opacity:0;
+}
+
+.heart img{
+  height:auto;
+  width:100%;
+  display: block;
+}
+
+@keyframes heartZoom{
+  0%{ transform:scale(0.5); opacity:0;}
+  100%{ transform:scale(1); opacity:1;}
+}
+
+/* QUOTES */
+.quote{
+  font-size:22px;
+  line-height:1.6;
+  opacity:0.95;
+}
+
+/* HAPPY BIRTHDAY */
+.birthday{
+  font-size:60px;
+  font-weight:700;
+  line-height:1.1;
+}
+
+.birthday span{
+  display:block;
+  font-size:65px;
+}
+
+/* SMALL SCROLL HINT */
+.scroll{
+  position:absolute;
+  bottom:30px;
+  font-size:14px;
+  opacity:0.8;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:0.3;}
+  50%{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SECTION 1: HEART -->
+<section>
+  <div class="heart">
+    <img src="heart.png" alt="png">
+  </div>
+  <div class="scroll">scroll down ↓</div>
+</section>
+
+<!-- SECTION 2: QUOTES -->
+<section>
+  <p class="quote">
+    Some people don’t just come into our lives,  
+    they make them more beautiful 💖  
+    <br><br>
+    Your smile, your kindness, your presence —  
+    everything about you feels special ✨
+  </p>
+</section>
+
+<!-- SECTION 3: HAPPY BIRTHDAY -->
+<section>
+  <div class="birthday">
+    Happy  
+    <span>Birthday Kishmish🎉</span>
+  </div>
+</section>
+
+</body>
+</html>
