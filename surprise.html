@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Happy Birthday ❤️</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins', sans-serif;
-}
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #111, #000);
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      padding: 40px 0 20px 0;
+    }
+    .page {
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      z-index: 2;
+    }
+    .page p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: justify;
+      color: #fff;
+    }
+  
+    .heart {
+      position: fixed;
+      bottom: -50px;
+      color: #ff4d6d;
+      font-size: 20px;
+      animation: floatUp linear infinite;
+      opacity: 0.8;
+      z-index: 1;
+      pointer-events: none;
+    }
 
-body{
-  background: linear-gradient(180deg,#ff0077,#ff0278);
-  color:#fff;
-  text-align:center;
-  overflow-x:hidden;
-}
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+      }
+    }
 
-/* SECTION COMMON */
-section{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  position: relative;
-}
-
-/* BIG HEART */
-.heart{
-  height: 300px;
-  width: 300px;
-  display: flex;
-  justify-content: center ;
-  align-items: center;
-  animation: heartZoom 3s ease forwards;
-  opacity:0;
-}
-
-.heart img{
-  height:auto;
-  width:100%;
-  display: block;
-}
-
-@keyframes heartZoom{
-  0%{ transform:scale(0.5); opacity:0;}
-  100%{ transform:scale(1); opacity:1;}
-}
-
-/* QUOTES */
-.quote{
-  font-size:22px;
-  line-height:1.6;
-  opacity:0.95;
-}
-
-/* HAPPY BIRTHDAY */
-.birthday{
-  font-size:60px;
-  font-weight:700;
-  line-height:1.1;
-}
-
-.birthday span{
-  display:block;
-  font-size:65px;
-}
-
-/* SMALL SCROLL HINT */
-.scroll{
-  position:absolute;
-  bottom:70px;
-  font-size:14px;
-  opacity:0.8;
-  animation: blink 1.5s infinite;
-}
-
-@keyframes blink{
-  0%,100%{opacity:0.3;}
-  50%{opacity:1;}
-}
-</style>
+    .bold {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 22px;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="page" id="page2">
+    <h1>For You ❤️</h1>
 
-<!-- SECTION 1: HEART -->
-<section>
-  <div class="heart">
-    <img src="heart.png" alt="png">
+    <p>
+      I'm sorry! har uss baat k liye jiske wjh s tm hurt hui ho, royi ho, ya jisse tmhe bura laga ho.
+    </p>
+    <p>
+      Muje maaf kr do qki mene kabi tmhe special feel nai karwaya, hmesa tmhe chhod k chala jata hu jb tmhe meri jrurat hoti h ur muje uss time 
+      pta nai kuch samjh hi aata ky bolu kese handle kru dimaag m bahot kuch chalta lekin kuch kr nai pata hu.
+    </p>
+    <p>
+      Uss time pta nai konsa yoodh m mera dimaag chal jata naa kuch soch pata hu ur naa hi kuch bol pata hu ur fir hmari yoodh ho jati h.
+    </p>
+    <p>
+      Muje hmari bich hui chije AI s nai kehna chahiye lekin mene bola jo v hua, m ky krta hu, m kitna bura hu sb kuch toh AI bola m bahot weak hu 
+      tmhre mamle m. Jb v hm dono k bich essa kuch hota h toh m bolna chahta hu lekin m word choose krne m bahot kamjor hu issiliye m kuch bol nai 
+      pata hu shant ho jata hu qki m drta hu tmhe khone s, ki kuch glt nikl gya ur m gya kaam s iska mtlb ye nai ki m tmse pyaar nai krta.
+    </p>
+    <p>
+      Meri khamoshi ka matlab kabhi bhi  
+      pyaar ki kami nahi hota.  
+      Main bas tumhe khona nahi chahta.
+    </p>
+    <p>Haa n chup ho jata hu qki m jnta nai ky bolna h lekin uss chuppi k saath m khada rhta hu tmhe chhod k nai jata.</p>
+    <p>
+      Qki, Tum mere liye important ho 🤍
+    </p>
+    <p class="bold">I love u so much shona...</p>
+    <p>Ho sake toh apne iss naa-samjh ko maaf kr do.</p>
   </div>
-  <div class="scroll">scroll down ↓</div>
-</section>
 
-<!-- SECTION 2: QUOTES -->
-<section>
-  <p class="quote">
-    You feel deeply, you care honestly,
-    and that’s what makes you special.
-    Happy Birthday to a best friend
-    who means more than words can say 💖
-  </p>
-</section>
-
-<!-- SECTION 3: HAPPY BIRTHDAY -->
-<section>
-  <div class="birthday">
-    Happy  
-    <span>Birthday Kishmish🎉</span>
-  </div>
-</section>
-
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+    
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+    
+      document.body.appendChild(heart);
+    
+      setTimeout(() => {
+        heart.remove();
+      }, 7000);
+    }
+    setInterval(createHeart, 300);
+  </script>
 </body>
-
 </html>
-
-
